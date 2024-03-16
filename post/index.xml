@@ -6,7 +6,34 @@
         <description>Recent content in Posts on FANG S.H 个人博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 16 Mar 2024 08:00:43 -0400</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 16 Mar 2024 11:03:55 -0400</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>222</title>
+        <link>http://localhost:1313/post/222/</link>
+        <pubDate>Sat, 16 Mar 2024 11:03:55 -0400</pubDate>
+        
+        <guid>http://localhost:1313/post/222/</guid>
+        <description>&lt;p&gt;12345&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>MTK射频校准</title>
+        <link>http://localhost:1313/post/first/</link>
+        <pubDate>Sat, 16 Mar 2024 08:00:43 -0400</pubDate>
+        
+        <guid>http://localhost:1313/post/first/</guid>
+        <description>&lt;h2 id=&#34;fangshenghai&#34;&gt;fangshenghai&lt;/h2&gt;
+</description>
+        </item>
+        <item>
+        <title>MTK射频校准</title>
+        <link>http://localhost:1313/post/mtk7628-wif%E5%B0%84%E9%A2%91%E6%A0%A1%E5%87%86/first/</link>
+        <pubDate>Sat, 16 Mar 2024 08:00:43 -0400</pubDate>
+        
+        <guid>http://localhost:1313/post/mtk7628-wif%E5%B0%84%E9%A2%91%E6%A0%A1%E5%87%86/first/</guid>
+        <description>&lt;h2 id=&#34;fangshenghai&#34;&gt;fangshenghai&lt;/h2&gt;
+</description>
+        </item>
+        <item>
         <title>Chinese Test</title>
         <link>http://localhost:1313/post/chinese-test/test-chinese/</link>
         <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
