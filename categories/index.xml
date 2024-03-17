@@ -2,33 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on FANG S.H 个人博客</title>
-        <link>https://fangsheng009.github.io/categories/</link>
+        <link>http://localhost:1313/categories/</link>
         <description>Recent content in Categories on FANG S.H 个人博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fangsheng009.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>硬件</title>
-        <link>https://fangsheng009.github.io/categories/hw/</link>
+        <link>http://localhost:1313/categories/hw/</link>
         <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://fangsheng009.github.io/categories/hw/</guid>
-        <description>&lt;img src="https://fangsheng009.github.io/categories/hw/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post 硬件" /&gt;</description>
+        <guid>http://localhost:1313/categories/hw/</guid>
+        <description></description>
         </item>
         <item>
         <title>工具</title>
-        <link>https://fangsheng009.github.io/categories/tool/</link>
+        <link>http://localhost:1313/categories/tool/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://fangsheng009.github.io/categories/tool/</guid>
-        <description>&lt;img src="https://fangsheng009.github.io/categories/tool/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post 工具" /&gt;</description>
+        <guid>http://localhost:1313/categories/tool/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>无线校准</title>
+        <link>http://localhost:1313/categories/wifi/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/wifi/</guid>
+        <description></description>
         </item>
         <item>
         <title>软件</title>
-        <link>https://fangsheng009.github.io/categories/sw/</link>
+        <link>http://localhost:1313/categories/sw/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://fangsheng009.github.io/categories/sw/</guid>
-        <description>&lt;img src="https://fangsheng009.github.io/categories/sw/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post 软件" /&gt;</description>
+        <guid>http://localhost:1313/categories/sw/</guid>
+        <description></description>
         </item>
         
     </channel>
