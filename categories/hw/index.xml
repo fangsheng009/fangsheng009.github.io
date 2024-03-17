@@ -6,7 +6,46 @@
         <description>Recent content in 硬件 on FANG S.H 个人博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fangsheng009.github.io/categories/hw/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 17 Mar 2024 15:47:46 -0400</lastBuildDate><atom:link href="https://fangsheng009.github.io/categories/hw/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>MT7628-WIFI校准</title>
+        <link>https://fangsheng009.github.io/post/mt7628-wifi%E6%A0%A1%E5%87%86/mt7628-wifi%E6%A0%A1%E5%87%86/</link>
+        <pubDate>Sun, 17 Mar 2024 15:47:46 -0400</pubDate>
+        
+        <guid>https://fangsheng009.github.io/post/mt7628-wifi%E6%A0%A1%E5%87%86/mt7628-wifi%E6%A0%A1%E5%87%86/</guid>
+        <description>&lt;p&gt;关闭WIFI-1463&amp;quot;		手机-11
+关闭WIFI-1163&amp;quot;		手机-1463
+联通SIM卡	福州联通	109.47	105.02		104.35	107.82	208.03	63.82			104.37	30.03	255.15	76.5
+99.46	109.28		117.03	107.75	244.68	73.39			104.56	24.46	243.99	68.27
+106	109.71		124.27	104.98	253.13	65.88			106.15	26.89	246.26	89.12
+113.75	104.72	220.63	51.05			108.65	19.75	239.3	91.63
+124.65	108.83	224.7	79.69			108.8	21.31	233.08	90.04
+无锡联通	59.33	111.15										
+65.03	107.63										
+56.49	109.71&lt;/p&gt;
+&lt;p&gt;12V 3A
+工作温度范围 : -20~55℃
+储存温度范围 : -40~85℃
+储存湿度范围: 5~95% 无冷凝
+工作湿度范围: 5~95% 无冷凝
+IPQ5018+QCN6102+AR8033
+无线PHY：内置
+外置PA型号：FEM：QPF4288A
+外置LNA型号：内置
+外置RF switch型号：内置
+无线PHY：
+外置PA型号：FEM：QPF4588A
+外置LNA型号：
+外置RF switch型号：
+M.2接口 5G模块用高通X55，同时考虑X62的模块
+外置
+4Gbit DDR3 SDRAM    512MB
+SPI:NOR FLASH 8MB  NAND flash 128MB
+&amp;ldquo;以太网PHY： AR8033
+LAN&lt;em&gt;1/支持10/100/1000Mbps 自适应&lt;br&gt;
+WAN&lt;/em&gt;1/支持10/100/1000Mbps 自适应&amp;rdquo;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Chinese Test</title>
         <link>https://fangsheng009.github.io/post/chinese-test/test-chinese/</link>
         <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
