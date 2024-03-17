@@ -3,7 +3,7 @@
                             rgba(${h.DarkMuted.rgb[0]}, ${h.DarkMuted.rgb[1]}, ${h.DarkMuted.rgb[2]}, 0.5) 0%, 
                             rgba(${h.Vibrant.rgb[0]}, ${h.Vibrant.rgb[1]}, ${h.Vibrant.rgb[2]}, 0.75) 100%)`})})}).observe(t);let r=document.querySelectorAll(".article-content div.highlight"),i="Copy",n="Copied!";r.forEach(o=>{let s=document.createElement("button");s.innerHTML=i,s.classList.add("copyCodeButton"),o.appendChild(s);let c=o.querySelector("code[data-lang]");c&&s.addEventListener("click",()=>{navigator.clipboard.writeText(c.textContent).then(()=>{s.textContent=n,setTimeout(()=>{s.textContent=i},1e3)}).catch(d=>{alert(d),console.log("Something went wrong",d)})})}),new E(document.getElementById("dark-mode-toggle"))}};window.addEventListener("load",()=>{setTimeout(function(){x.init()},0)});window.Stack=x;window.createElement=w;})();
 /*!
-*   Hugo Theme Stack
+*   Hugo 
 *
 *   @author: Jimmy Cai
 *   @website: https://jimmycai.com
