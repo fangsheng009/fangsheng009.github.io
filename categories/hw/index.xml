@@ -8,6 +8,156 @@
         <language>en-us</language>
         <lastBuildDate>Sun, 17 Mar 2024 15:47:46 -0400</lastBuildDate><atom:link href="https://fangsheng009.github.io/categories/hw/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>MT7628-WIFI校准</title>
+        <link>https://fangsheng009.github.io/post/demo/demo/</link>
+        <pubDate>Sun, 17 Mar 2024 15:47:46 -0400</pubDate>
+        
+        <guid>https://fangsheng009.github.io/post/demo/demo/</guid>
+        <description>&lt;p&gt;什么是C语言&lt;/p&gt;
+&lt;p&gt;第一个C语言程序&lt;/p&gt;
+&lt;p&gt;数据类型&lt;/p&gt;
+&lt;p&gt;变量、常量&lt;/p&gt;
+&lt;p&gt;低级语言，高级&lt;/p&gt;
+&lt;p&gt;汇编指令，B语言，C语言&lt;/p&gt;
+&lt;p&gt;10001010 ADD 高级语言&lt;/p&gt;
+&lt;p&gt;C语言的国际标准&lt;/p&gt;
+&lt;p&gt;ANSI&lt;/p&gt;
+&lt;p&gt;C89 C90 C99 C11&lt;/p&gt;
+&lt;p&gt;C89 C90&lt;/p&gt;
+&lt;p&gt;编译器 Clang GCC WIN-TC SUBLIME MSVC TURBO C&lt;/p&gt;
+&lt;p&gt;编辑器和编译器不一样&lt;/p&gt;
+&lt;p&gt;Ctrl+F5 开始执行不调试。F5是调试&lt;/p&gt;
+&lt;p&gt;3\ 数据类型&lt;/p&gt;
+&lt;p&gt;Char&lt;/p&gt;
+&lt;p&gt;Short 短整型&lt;/p&gt;
+&lt;p&gt;Int&lt;/p&gt;
+&lt;p&gt;Long&lt;/p&gt;
+&lt;p&gt;Long long&lt;/p&gt;
+&lt;p&gt;Float 单精度浮点型&lt;/p&gt;
+&lt;p&gt;Double 双精度浮点型&lt;/p&gt;
+&lt;p&gt;为什么写代码&lt;/p&gt;
+&lt;p&gt;为了解决生活中的问题，购物、点餐、看电影、&lt;/p&gt;
+&lt;p&gt;书 鹏哥C语言的书记 66块。&lt;/p&gt;
+&lt;p&gt;66 是整数 整型&lt;/p&gt;
+&lt;p&gt;66.6小数 浮点型&lt;/p&gt;
+&lt;p&gt;书名 字符串 字符型&lt;/p&gt;
+&lt;p&gt;Openwrt@#&lt;/p&gt;
+&lt;p&gt;6.66&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ctrl&lt;/strong&gt; + &lt;strong&gt;K&lt;/strong&gt;, 在&lt;strong&gt;Ctrl&lt;/strong&gt; + &lt;strong&gt;C&lt;/strong&gt;: 将选中的行全部注释&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ctrl&lt;/strong&gt; + &lt;strong&gt;K&lt;/strong&gt;, &lt;strong&gt;Ctrl&lt;/strong&gt; + &lt;strong&gt;U&lt;/strong&gt;: 取消选中的行的注释&lt;/p&gt;
+&lt;p&gt;计算机中的单位&lt;/p&gt;
+&lt;p&gt;Bit 比特位&lt;/p&gt;
+&lt;p&gt;Byte 字节&lt;/p&gt;
+&lt;p&gt;Kb&lt;/p&gt;
+&lt;p&gt;Mb&lt;/p&gt;
+&lt;p&gt;Tb&lt;/p&gt;
+&lt;p&gt;pb&lt;/p&gt;
+&lt;p&gt;计算机能理解二进制&lt;/p&gt;
+&lt;p&gt;我们生活在十进制的世界&lt;/p&gt;
+&lt;p&gt;0~9&lt;/p&gt;
+&lt;p&gt;66&lt;/p&gt;
+&lt;p&gt;二级制的世界&lt;/p&gt;
+&lt;p&gt;只有0 1&lt;/p&gt;
+&lt;p&gt;八进制&lt;/p&gt;
+&lt;p&gt;0~7&lt;/p&gt;
+&lt;p&gt;十六进制&lt;/p&gt;
+&lt;p&gt;0~F F是15&lt;/p&gt;
+&lt;p&gt;8个bit等于1byte&lt;/p&gt;
+&lt;p&gt;00 0&lt;/p&gt;
+&lt;p&gt;01 1&lt;/p&gt;
+&lt;p&gt;10 2&lt;/p&gt;
+&lt;p&gt;11 3&lt;/p&gt;
+&lt;p&gt;向内存申请空间&lt;/p&gt;
+&lt;p&gt;创建变量的本质是向内存申请空间&lt;/p&gt;
+&lt;p&gt;变量和常量&lt;/p&gt;
+&lt;p&gt;变量的分类&lt;/p&gt;
+&lt;p&gt;局部变量&lt;/p&gt;
+&lt;p&gt;全局变量&lt;/p&gt;
+&lt;p&gt;当全局变量和局部变量名字相同时，局部变量优先&lt;/p&gt;
+&lt;p&gt;_CRT_SECURE_NO_WARNINGS&lt;/p&gt;
+&lt;p&gt;在源文件的第一行放#define _CRT_SECURE_NO_WARNINGS&lt;/p&gt;
+&lt;p&gt;Scanf 这个是VS编译器自己提供的函数，非标准C提供的函数，那也就是只有VS编译器能认识&lt;/p&gt;
+&lt;p&gt;如果你非要使用scanf_s 请你研究一下再使用&lt;/p&gt;
+&lt;p&gt;在VS安装路径下 newc++file.cpp文件&lt;/p&gt;
+&lt;p&gt;在VS工程中创建新的.c或者.cpp文件的时候，都是拷贝new&lt;/p&gt;
+&lt;p&gt;变量的作用域和变量的生命周期&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;局部变量 限定这个名字的可用性的代码&lt;/li&gt;
+&lt;li&gt;全局变量&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;变量的生命周期&lt;/p&gt;
+&lt;p&gt;局部变量的生命周期是：进入作用域生命周期开始，出作用域生命周期结束&lt;/p&gt;
+&lt;p&gt;全局变量&lt;/p&gt;
+&lt;p&gt;在生个生命周期都是存在的，都是你可以用的&lt;/p&gt;
+&lt;p&gt;字面常量&lt;/p&gt;
+&lt;p&gt;Const 修饰的常变量&lt;/p&gt;
+&lt;p&gt;不能再修改&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;枚举常量&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;4字符串+转义字符+注释&lt;/p&gt;
+&lt;p&gt;Ctrl +F10 调试模式，打开监视窗口&lt;/p&gt;
+&lt;p&gt;栈区，堆区，静态区&lt;/p&gt;
+&lt;p&gt;影响了变量的生命周期，生命周期变长，和程序的生命周期一样&lt;/p&gt;
+&lt;p&gt;一个内存单元的大小是一个字节&lt;/p&gt;
+&lt;p&gt;32位电脑&lt;/p&gt;
+&lt;p&gt;XXXX XXXX XXXX XXXX XXXX XXXX&lt;/p&gt;
+&lt;p&gt;.h .c编译成静态库&lt;/p&gt;
+&lt;p&gt;配置编译出静态库lib&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://fangsheng009.github.io/demo/c5b5f572f7c885143dcf57eab50e1904.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://fangsheng009.github.io/demo/b309aa1dcea73decd67c0d1fa7d058f5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://fangsheng009.github.io/demo/c27508a66048afd192e879d69da67162.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;改为&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://fangsheng009.github.io/demo/ecdd09a2b235febda657f4d98781da84.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Ctrl+ F7&lt;/p&gt;
+&lt;p&gt;Ctrl+F5&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1Vm4y1r7jY/?p=44&amp;amp;spm_id_from=pageDriver&amp;amp;vd_source=afe65db66339e30b541134f2a216daaa&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.bilibili.com/video/BV1Vm4y1r7jY/?p=44&amp;spm_id_from=pageDriver&amp;vd_source=afe65db66339e30b541134f2a216daaa&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;把.h和.lib放到&lt;/p&gt;
+&lt;p&gt;加上这句函数&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://fangsheng009.github.io/demo/acce7052b2fa9d2c078890b9a9b9316f.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;函数的栈帧的创建和销毁&lt;/p&gt;
+&lt;p&gt;数组的编号是从0开始的&lt;/p&gt;
+&lt;p&gt;判断输赢&lt;/p&gt;
+&lt;p&gt;算法的实现&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>MT7628-WIFI校准</title>
         <link>https://fangsheng009.github.io/post/mt7628-wifi%E6%A0%A1%E5%87%86/mt7628-wifi%E6%A0%A1%E5%87%86/</link>
         <pubDate>Sun, 17 Mar 2024 15:47:46 -0400</pubDate>
         
@@ -121,7 +271,8 @@ WAN&lt;/em&gt;1/支持10/100/1000Mbps 自适应&amp;rdquo;&lt;/p&gt;
     &gt;Inline Shortcodes&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;To enable emoji globally, set &lt;code&gt;enableEmoji&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in your site&amp;rsquo;s &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/configuration/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;configuration&lt;/a&gt; and then you can type emoji shorthand codes directly in content files; e.g.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;span class=&#34;nowrap&#34;&gt;&lt;span class=&#34;emojify&#34;&gt;🙈&lt;/span&gt; &lt;code&gt;:see_no_evil:&lt;/code&gt;&lt;/span&gt;  &lt;span class=&#34;nowrap&#34;&gt;&lt;span class=&#34;emojify&#34;&gt;🙉&lt;/span&gt; &lt;code&gt;:hear_no_evil:&lt;/code&gt;&lt;/span&gt;  &lt;span class=&#34;nowrap&#34;&gt;&lt;span class=&#34;emojify&#34;&gt;🙊&lt;/span&gt; &lt;code&gt;:speak_no_evil:&lt;/code&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;br&gt;
 &lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;http://www.emoji-cheat-sheet.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Emoji cheat sheet&lt;/a&gt; is a useful reference for emoji shorthand codes.&lt;/p&gt;
 &lt;hr&gt;
