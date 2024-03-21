@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Tue, 19 Mar 2024 15:47:46 -0400</lastBuildDate><atom:link href="https://fangsheng009.github.io/categories/hw/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>C 语言MT7628-WIFI校准</title>
+        <title>C 语言学习笔记</title>
         <link>https://fangsheng009.github.io/post/demo/demo/</link>
         <pubDate>Tue, 19 Mar 2024 15:47:46 -0400</pubDate>
         
@@ -96,6 +96,7 @@
 &lt;/ol&gt;
 &lt;p&gt;4字符串+转义字符+注释&lt;/p&gt;
 &lt;p&gt;Ctrl +F10 调试模式，打开监视窗口&lt;/p&gt;
+&lt;p&gt;ctrl+F11  进入单行调试&lt;/p&gt;
 &lt;p&gt;栈区，堆区，静态区&lt;/p&gt;
 &lt;p&gt;影响了变量的生命周期，生命周期变长，和程序的生命周期一样&lt;/p&gt;
 &lt;p&gt;一个内存单元的大小是一个字节&lt;/p&gt;
@@ -153,8 +154,80 @@
 &lt;p&gt;函数的栈帧的创建和销毁&lt;/p&gt;
 &lt;p&gt;数组的编号是从0开始的&lt;/p&gt;
 &lt;p&gt;判断输赢&lt;/p&gt;
-&lt;p&gt;算法的实现&lt;/p&gt;
-</description>
+&lt;p&gt;算法的实现
+二级指针
+二级指针变量是用来存放，一级指针变量的地址的&lt;/p&gt;
+&lt;p&gt;指针数组:
+存放指针的数组就是指针数组。&lt;/p&gt;
+&lt;p&gt;VS2019快捷键&lt;/p&gt;
+&lt;p&gt;ctrl&lt;/p&gt;
+&lt;p&gt;int arr[10]&lt;/p&gt;
+&lt;p&gt;int *parr[10]={&amp;amp;a,&amp;amp;b,&amp;amp;c};&lt;/p&gt;
+&lt;p&gt;//parr 就是看存放指针的数组&lt;/p&gt;
+&lt;p&gt;第七节 结构体&lt;/p&gt;
+&lt;p&gt;结构体的基础知识，
+结构体类型的声明
+结构体的初始化
+结构体的成员访问
+结构体传参&lt;/p&gt;
+&lt;p&gt;结构是一些值的结合，这些值成为成员的变量，结构的每个成员可以是不同类型的变量&lt;/p&gt;
+&lt;p&gt;结构是一种集合&lt;/p&gt;
+&lt;p&gt;数组是一组相同类型元素的集合
+结构是不同类型元素的&lt;/p&gt;
+&lt;p&gt;复杂对象&lt;/p&gt;
+&lt;p&gt;struct Peo
+{
+char name[20];
+char tele[12];
+char sex[5];
+int high;
+}p1,p2;&lt;/p&gt;
+&lt;p&gt;int main()
+{
+struct Peo p1={0};&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;return 0;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;p&gt;代码的调试，bug
+找bug的过程，调试
+所有发生的事情一定有迹可循，如果问心无愧，就不需要掩盖也就没有迹象啦，如果问心有愧，就必然需要掩盖，那就一定会有迹象，迹象越多就越容易顺腾而上，这就是推理的途径。顺着这条途径顺流而下就是犯罪，逆流而上，就是真相&lt;/p&gt;
+&lt;p&gt;一名优秀的程序员是一名出色的侦探
+每一次调试都是尝试破案的过程。&lt;/p&gt;
+&lt;p&gt;我们是如果写代码的
+不与奥给我说什么底层原理，框架内核，老夫敲的代买就是一把，复制，粘贴，拿起键盘就是干&lt;/p&gt;
+&lt;p&gt;有事如何排查出现的问题&lt;/p&gt;
+&lt;p&gt;神秘的程序员门&lt;/p&gt;
+&lt;p&gt;拒绝 迷信式调试&lt;/p&gt;
+&lt;p&gt;调试是什么
+调试又称除错，是发现和减少计算机程序或电子仪器设备中程序错误的过程。&lt;/p&gt;
+&lt;p&gt;调试的基本步骤&lt;/p&gt;
+&lt;p&gt;写程序的风险，严谨的，&lt;/p&gt;
+&lt;p&gt;debug和release的版本介绍&lt;/p&gt;
+&lt;p&gt;debug通常为调试版本，他包含调试信息，并且不作任何优化，便于程序员调试程序。
+release称为发布版本，它往往&lt;/p&gt;
+&lt;p&gt;发现程序错误的存在
+以隔离，消除等方式对错误进行定位
+确定错误产生的原因
+提出纠正错误的解决办法
+对程序错误予以改正，重新测试&lt;/p&gt;
+&lt;p&gt;程序员自己
+测试人员
+用户&lt;/p&gt;
+&lt;p&gt;快捷键
+F5  启动调试，是和F9配合一起用的
+F9  创建断电和取消断点&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wifi down
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rmmod monitor
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rmmod wifi_3_0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rmmod wifi_2_0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rmmod qca_ol
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;insmod qca_ol testmode&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;insmod wifi_3_0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;insmod diagchar
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;diag_socket_app -a 192.168.1.55 &amp;amp;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/etc/init.d/ftm start
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ftm -n -dd &amp;amp;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         </item>
         <item>
         <title>MT7628-WIFI校准</title>
