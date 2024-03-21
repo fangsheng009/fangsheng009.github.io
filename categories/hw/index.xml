@@ -237,6 +237,23 @@ F9  创建断电和取消断点&lt;/p&gt;
 6、注释清晰
 7、文档齐全&lt;/p&gt;
 &lt;p&gt;编译常见的错误&lt;/p&gt;
+&lt;p&gt;C语言进阶
+release版本会优化，这个补充下&lt;/p&gt;
+&lt;p&gt;源码
+反码
+补码  （反码+1）&lt;/p&gt;
+&lt;p&gt;内存中存储的都是补码&lt;/p&gt;
+&lt;p&gt;C  C语言实现简单的数据结构  ，C++, C++ STL 高级数据结构，计算机网络（网络协议+网络编程），LINUX(操作系统，系统编程)+数据库（MySQL）+实战项目   450小时&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://fangsheng009.github.io/demo/2024-03-21_165910.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+测开&lt;/p&gt;
+&lt;p&gt;大小端&lt;/p&gt;
 </description>
         </item>
         <item>
