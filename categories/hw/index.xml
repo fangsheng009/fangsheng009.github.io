@@ -227,7 +227,17 @@ F9  创建断电和取消断点&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;diag_socket_app -a 192.168.1.55 &amp;amp;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/etc/init.d/ftm start
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ftm -n -dd &amp;amp;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如何写好易于调试的代码&lt;/p&gt;
+&lt;p&gt;优秀的代码
+1、代码运行正常
+2、bug很少
+3、效率高
+4、可读性高
+5、可维护性高
+6、注释清晰
+7、文档齐全&lt;/p&gt;
+&lt;p&gt;编译常见的错误&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>MT7628-WIFI校准</title>
