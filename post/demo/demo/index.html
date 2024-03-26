@@ -259,7 +259,7 @@
 
 
                 <time class="article-time--reading">
-                    2 minute read
+                    3 minute read
                 </time>
             </div>
         
@@ -536,12 +536,121 @@ strlen</p>
 <p>C语言标准库函数</p>
 <p><a class="link" href="https://zh.cppreference.com/w/c/header"  target="_blank" rel="noopener"
     >https://zh.cppreference.com/w/c/header</a></p>
+<p><a class="link" href="https://blog.csdn.net/2302_79637129/article/details/136492137"  target="_blank" rel="noopener"
+    >https://blog.csdn.net/2302_79637129/article/details/136492137</a></p>
+<p>C语言标准库函数</p>
+<p><a class="link" href="https://zh.cppreference.com/w/c/header"  target="_blank" rel="noopener"
+    >https://zh.cppreference.com/w/c/header</a></p>
+<p><a class="link" href="https://blog.csdn.net/2302_79637129/article/details/136492137"  target="_blank" rel="noopener"
+    >https://blog.csdn.net/2302_79637129/article/details/136492137</a></p>
+<p><a class="link" href="https://cplusplus.com/reference/"  target="_blank" rel="noopener"
+    >https://cplusplus.com/reference/</a></p>
 <p><a class="link" href="https://legacy.cplusplus.com/reference/clibrary/"  target="_blank" rel="noopener"
     >https://legacy.cplusplus.com/reference/clibrary/</a></p>
 <p><a class="link" href="https://cplusplus.com/reference/"  target="_blank" rel="noopener"
     >https://cplusplus.com/reference/</a></p>
-<p><a class="link" href="https://blog.csdn.net/2302_79637129/article/details/136492137"  target="_blank" rel="noopener"
-    >https://blog.csdn.net/2302_79637129/article/details/136492137</a></p>
+<p>strcmp  比较两个字符串
+比较的是ascii码的值</p>
+<p>长度受限制的字符串函数
+strncpy  复制过来覆盖
+strncat  复制过来追加
+strncmp  字符串比较
+strstr查找字符串  ，找到后从首地址开始打印后面的</p>
+<p>KMP算法
+这个算法也是用来实现在一个字符串中查找子字符的，有空可以研究下</p>
+<p>效率高，但是代码学习困难
+B站搜索  比特大博哥  可以找到KMP算法的实现。</p>
+<p>strtok 切割字符串的
+char *strtok( char *strToken, const char *strDelimit );</p>
+<p>strerror   返回错误码，所对应的错误信息  errno.h头文件</p>
+<p>C语言的库函数，在执行失败的时候，都会设置错误码</p>
+<p>字符分类函数
+iscntrl
+isspace
+isdigit
+isxdigit
+islower
+isupper
+isalpha
+isalnum
+ispunct
+isgraph
+isprint</p>
+<p>程序员的思维严谨
+出去买五个馒头，如果遇到西瓜，买一个</p>
+<p>需求澄清会，问题问清楚，沟通的重要性</p>
+<p>isspace</p>
+<p>字符转换<br>
+tolower</p>
+<p>memcpy  内存拷贝</p>
+<p>void * memcpy ( void * destination, const void * source, size_t num );</p>
+<p>重叠内存的拷贝
+memmov  函数的实现，用来复制重叠的数据拷贝</p>
+<p>memcmp 函数内存比较</p>
+<p>memset 只定一个内存块存放，新申请的内存区域</p>
+<p>自定义类型
+结构体的声明，联合体，枚举</p>
+<p>数据在内存中的存储结构</p>
+<p>线型
+顺序表
+链表</p>
+<p>树形
+二叉树</p>
+<p>结构体的自引用</p>
+<p>结构体变量的定义和初始化
+有了结构体类型，那如何定义变量</p>
+<p>结构内存的对齐
+VS默认 的对齐是8</p>
+<p>offsetof  返回的是变异量</p>
+<p>平台原因 移植原因</p>
+<p>性能原因
+数据结构(尤其是栈)应该尽可能地在自然边界上对齐
+原因在于，为了访问未对齐的内存，处理器需要作两次内存访问；而对齐的内存访问仅需要一次访问。
+总体来说，结构体的内存对齐是拿空间来换取时间的做法。</p>
+<p>那设计的时候，我们纪要满足对齐，又要节省空间
+让占用空间小的成员尽量集中在一起。</p>
+<p>#pragma pack(4) 这个预处理就是修改默认对齐 4,可以修改</p>
+<p>头文件中使用，功能是：防止头文件被多次引用</p>
+<p>位段
+位段其实是可以节省空间的，同一类型
+注重可移植的程序应该避免使用位段</p>
+<p>16位和32位系统的，位段中最大位的数，不能确定</p>
+<p>跟结构相比，位段可以达到同样的效果，但是可以很好的节省空间，但是有跨平台的问题存在。</p>
+<p>位段的应用，可以写更多的代码适应不同的平台</p>
+<p>位段的应用</p>
+<p>通讯录练习实现</p>
+<p>人的信息
+名字
+年龄
+性别
+电话
+地址
+1、存放100个人的信息
+2、增加联系人
+3、删除指定联系人
+4、查找联系人
+5、修改联系人
+6、排序
+7、显示联系人</p>
+<p>枚举
+枚举类型的定义
+enum Day
+{</p>
+<p>}</p>
+<p>联合体
+union 不会同时用</p>
+<p>重要的三个
+指针
+结构体
+动态内存开辟</p>
+<p>学习数据结构</p>
+<p>动态内存函数的介绍
+malloc  可以维护空间的大小
+free
+calloc  有初始化的功能  =malloc + memset
+realloc 调整内存  找新的空间，复制参数后，返回新的空间地址，释放旧的地址，需要接收新的地址。如果连续的空间够，就用原来的地址</p>
+<p>内存池</p>
+<p>柔性数组</p>
 
 </section>
 

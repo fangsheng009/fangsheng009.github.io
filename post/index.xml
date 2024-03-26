@@ -6,7 +6,55 @@
         <description>Recent content in Posts on FANG S.H 个人博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 19 Mar 2024 15:47:46 -0400</lastBuildDate><atom:link href="https://fangsheng009.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 26 Mar 2024 10:34:25 -0400</lastBuildDate><atom:link href="https://fangsheng009.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>QDART-加载IQ仪器安装QTI方法</title>
+        <link>https://fangsheng009.github.io/post/20240326-2228_qdart-%E9%93%BE%E6%8E%A5iq%E4%BB%AA%E5%99%A8%E5%AE%89%E8%A3%85qti%E6%96%B9%E6%B3%95/20240326-2228_qdart-%E9%93%BE%E6%8E%A5iq%E4%BB%AA%E5%99%A8%E5%AE%89%E8%A3%85qti%E6%96%B9/</link>
+        <pubDate>Tue, 26 Mar 2024 10:34:25 -0400</pubDate>
+        
+        <guid>https://fangsheng009.github.io/post/20240326-2228_qdart-%E9%93%BE%E6%8E%A5iq%E4%BB%AA%E5%99%A8%E5%AE%89%E8%A3%85qti%E6%96%B9%E6%B3%95/20240326-2228_qdart-%E9%93%BE%E6%8E%A5iq%E4%BB%AA%E5%99%A8%E5%AE%89%E8%A3%85qti%E6%96%B9/</guid>
+        <description>&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;未安装QTI的IQ，使用QDART不能正常加载&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://fangsheng009.github.io/20240326-2242_media/ef2fb50c8d1911ffbf13e29bab0f9d54.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://fangsheng009.github.io/20240326-2242_media/6e20c2802b86453b81e0bfccf4c5cfdb.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://fangsheng009.github.io/20240326-2242_media/02212e318b4287431dd7abca2fc09a23.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://fangsheng009.github.io/20240326-2242_media/18ee08a71cb2dfa7b7602966af245560.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装LitePoint_QTI_SCPI后的状态&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
         <title>C 语言学习笔记</title>
         <link>https://fangsheng009.github.io/post/demo/demo/</link>
         <pubDate>Tue, 19 Mar 2024 15:47:46 -0400</pubDate>
@@ -274,12 +322,121 @@ strlen&lt;/p&gt;
 &lt;p&gt;C语言标准库函数&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zh.cppreference.com/w/c/header&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://zh.cppreference.com/w/c/header&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/2302_79637129/article/details/136492137&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://blog.csdn.net/2302_79637129/article/details/136492137&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;C语言标准库函数&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zh.cppreference.com/w/c/header&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://zh.cppreference.com/w/c/header&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/2302_79637129/article/details/136492137&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://blog.csdn.net/2302_79637129/article/details/136492137&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cplusplus.com/reference/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cplusplus.com/reference/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://legacy.cplusplus.com/reference/clibrary/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://legacy.cplusplus.com/reference/clibrary/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cplusplus.com/reference/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://cplusplus.com/reference/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/2302_79637129/article/details/136492137&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://blog.csdn.net/2302_79637129/article/details/136492137&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;strcmp  比较两个字符串
+比较的是ascii码的值&lt;/p&gt;
+&lt;p&gt;长度受限制的字符串函数
+strncpy  复制过来覆盖
+strncat  复制过来追加
+strncmp  字符串比较
+strstr查找字符串  ，找到后从首地址开始打印后面的&lt;/p&gt;
+&lt;p&gt;KMP算法
+这个算法也是用来实现在一个字符串中查找子字符的，有空可以研究下&lt;/p&gt;
+&lt;p&gt;效率高，但是代码学习困难
+B站搜索  比特大博哥  可以找到KMP算法的实现。&lt;/p&gt;
+&lt;p&gt;strtok 切割字符串的
+char *strtok( char *strToken, const char *strDelimit );&lt;/p&gt;
+&lt;p&gt;strerror   返回错误码，所对应的错误信息  errno.h头文件&lt;/p&gt;
+&lt;p&gt;C语言的库函数，在执行失败的时候，都会设置错误码&lt;/p&gt;
+&lt;p&gt;字符分类函数
+iscntrl
+isspace
+isdigit
+isxdigit
+islower
+isupper
+isalpha
+isalnum
+ispunct
+isgraph
+isprint&lt;/p&gt;
+&lt;p&gt;程序员的思维严谨
+出去买五个馒头，如果遇到西瓜，买一个&lt;/p&gt;
+&lt;p&gt;需求澄清会，问题问清楚，沟通的重要性&lt;/p&gt;
+&lt;p&gt;isspace&lt;/p&gt;
+&lt;p&gt;字符转换&lt;br&gt;
+tolower&lt;/p&gt;
+&lt;p&gt;memcpy  内存拷贝&lt;/p&gt;
+&lt;p&gt;void * memcpy ( void * destination, const void * source, size_t num );&lt;/p&gt;
+&lt;p&gt;重叠内存的拷贝
+memmov  函数的实现，用来复制重叠的数据拷贝&lt;/p&gt;
+&lt;p&gt;memcmp 函数内存比较&lt;/p&gt;
+&lt;p&gt;memset 只定一个内存块存放，新申请的内存区域&lt;/p&gt;
+&lt;p&gt;自定义类型
+结构体的声明，联合体，枚举&lt;/p&gt;
+&lt;p&gt;数据在内存中的存储结构&lt;/p&gt;
+&lt;p&gt;线型
+顺序表
+链表&lt;/p&gt;
+&lt;p&gt;树形
+二叉树&lt;/p&gt;
+&lt;p&gt;结构体的自引用&lt;/p&gt;
+&lt;p&gt;结构体变量的定义和初始化
+有了结构体类型，那如何定义变量&lt;/p&gt;
+&lt;p&gt;结构内存的对齐
+VS默认 的对齐是8&lt;/p&gt;
+&lt;p&gt;offsetof  返回的是变异量&lt;/p&gt;
+&lt;p&gt;平台原因 移植原因&lt;/p&gt;
+&lt;p&gt;性能原因
+数据结构(尤其是栈)应该尽可能地在自然边界上对齐
+原因在于，为了访问未对齐的内存，处理器需要作两次内存访问；而对齐的内存访问仅需要一次访问。
+总体来说，结构体的内存对齐是拿空间来换取时间的做法。&lt;/p&gt;
+&lt;p&gt;那设计的时候，我们纪要满足对齐，又要节省空间
+让占用空间小的成员尽量集中在一起。&lt;/p&gt;
+&lt;p&gt;#pragma pack(4) 这个预处理就是修改默认对齐 4,可以修改&lt;/p&gt;
+&lt;p&gt;头文件中使用，功能是：防止头文件被多次引用&lt;/p&gt;
+&lt;p&gt;位段
+位段其实是可以节省空间的，同一类型
+注重可移植的程序应该避免使用位段&lt;/p&gt;
+&lt;p&gt;16位和32位系统的，位段中最大位的数，不能确定&lt;/p&gt;
+&lt;p&gt;跟结构相比，位段可以达到同样的效果，但是可以很好的节省空间，但是有跨平台的问题存在。&lt;/p&gt;
+&lt;p&gt;位段的应用，可以写更多的代码适应不同的平台&lt;/p&gt;
+&lt;p&gt;位段的应用&lt;/p&gt;
+&lt;p&gt;通讯录练习实现&lt;/p&gt;
+&lt;p&gt;人的信息
+名字
+年龄
+性别
+电话
+地址
+1、存放100个人的信息
+2、增加联系人
+3、删除指定联系人
+4、查找联系人
+5、修改联系人
+6、排序
+7、显示联系人&lt;/p&gt;
+&lt;p&gt;枚举
+枚举类型的定义
+enum Day
+{&lt;/p&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;p&gt;联合体
+union 不会同时用&lt;/p&gt;
+&lt;p&gt;重要的三个
+指针
+结构体
+动态内存开辟&lt;/p&gt;
+&lt;p&gt;学习数据结构&lt;/p&gt;
+&lt;p&gt;动态内存函数的介绍
+malloc  可以维护空间的大小
+free
+calloc  有初始化的功能  =malloc + memset
+realloc 调整内存  找新的空间，复制参数后，返回新的空间地址，释放旧的地址，需要接收新的地址。如果连续的空间够，就用原来的地址&lt;/p&gt;
+&lt;p&gt;内存池&lt;/p&gt;
+&lt;p&gt;柔性数组&lt;/p&gt;
 </description>
         </item>
         <item>
