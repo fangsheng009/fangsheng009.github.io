@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="郝斌C语言笔记">
+<title>郝斌C语言笔记</title>
+
+<link rel='canonical' href='https://fangsheng009.github.io/post/20240329-2255-%E9%83%9D%E6%96%8Cc%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/20240329_%E9%83%9D%E6%96%8Cc%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/'>
+
+<link rel="stylesheet" href="/scss/style.min.53c38ab902b8a34f83bba667224cad38a5435e0a5107d7b6f2e160d6ce78ea74.css"><meta property='og:title' content="郝斌C语言笔记">
+<meta property='og:description' content="郝斌C语言笔记">
+<meta property='og:url' content='https://fangsheng009.github.io/post/20240329-2255-%E9%83%9D%E6%96%8Cc%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/20240329_%E9%83%9D%E6%96%8Cc%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/'>
+<meta property='og:site_name' content='FANG S.H 个人博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-03-29T10:55:16-04:00'/><meta property='article:modified_time' content='2024-03-29T10:55:16-04:00'/>
+<meta name="twitter:title" content="郝斌C语言笔记">
+<meta name="twitter:description" content="郝斌C语言笔记">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu7d60f60bef894bacc88ce5ae77ed0227_25316_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">FANG S.H 个人博客</a></h1>
+            <h2 class="site-description"></h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>文档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>黑白</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/hw/" style="background-color: #2a9d8f; color: #fff;">
+                硬件
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/20240329-2255-%E9%83%9D%E6%96%8Cc%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/20240329_%E9%83%9D%E6%96%8Cc%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/">郝斌C语言笔记</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            郝斌C语言笔记
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Mar 29, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    5 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>郝斌C语言笔记</p>
+<p>#inlude &lt;stdio.h&gt;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wifi down
+</span></span><span style="display:flex;"><span>rmmod monitor
+</span></span><span style="display:flex;"><span>rmmod wifi_3_0
+</span></span><span style="display:flex;"><span>rmmod wifi_2_0
+</span></span><span style="display:flex;"><span>rmmod qca_ol
+</span></span><span style="display:flex;"><span>insmod qca_ol testmode<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>insmod wifi_3_0
+</span></span><span style="display:flex;"><span>insmod diagchar
+</span></span><span style="display:flex;"><span>diag_socket_app -a 192.168.1.55 &amp;
+</span></span><span style="display:flex;"><span>/etc/init.d/ftm start
+</span></span><span style="display:flex;"><span>ftm -n -dd &amp;
+</span></span></code></pre></div><p>指针的概述</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#define _CRT_SECURE_NO_WARNINGS</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#include &lt;stdio.h&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>int main<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	int* p;	//p是变量的名字，int * 表示p变量存放的是int 类型变量的地址
+</span></span><span style="display:flex;"><span>			//int * p;  不表示定义了一个名字叫做*p的变量
+</span></span><span style="display:flex;"><span>			//int * p;  应该这样理解：p是变量名，p变量的数据类型是 int * 类型
+</span></span><span style="display:flex;"><span>			//所谓int *类型   实际就是存放int变量地址的类型
+</span></span><span style="display:flex;"><span>	int i <span style="color:#f92672">=</span> 3;
+</span></span><span style="display:flex;"><span>	int j;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	p <span style="color:#f92672">=</span> &amp;i;
+</span></span><span style="display:flex;"><span>	/*
+</span></span><span style="display:flex;"><span>		1. p保存了i的地址，因此p指向i
+</span></span><span style="display:flex;"><span>		2. p不是i，i也不是p，更准确的说：修改p的值不影响i的值，修改i的值也不影响p
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		3. 如果一个指针变量指向了某个普通变量，则
+</span></span><span style="display:flex;"><span>		*指针变量	就完全等同于	普通变量
+</span></span><span style="display:flex;"><span>		例子：
+</span></span><span style="display:flex;"><span>			如果p是个指针变量，并且p存放了普通变量i的地址
+</span></span><span style="display:flex;"><span>			则p指向了普通变量i
+</span></span><span style="display:flex;"><span>			*p 就完成等同于 i
+</span></span><span style="display:flex;"><span>			或者说：在所有出现*p的地方都可以替换成i
+</span></span><span style="display:flex;"><span>					在所有出现i的地方都可以替换成*p
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	*/
+</span></span><span style="display:flex;"><span>	j <span style="color:#f92672">=</span> *p;
+</span></span><span style="display:flex;"><span>	printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;i = %d, j = %d\n&#34;</span>, i,j<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> 0;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>指针就是地址，地址就是指针
+地址就是内存单元的编号</p>
+<p>asscii  这个叫编码</p>
+<p>指针变量是存放地址的变量
+指针和指针变量是两个不同的概念
+但是要注意： 通常我们叙述时会把指针变量简称为指针，实际它们的含义并不一样。</p>
+<p>指针和指针变量的关系
+动态内存分配</p>
+<p>20240329
+############################
+P122   指针的重要性</p>
+<p>表示一些复杂的数据结构。  学数据结构必须要学习指针
+快递的传递数据<br>
+是函数返回一个以上的值
+能直接访问硬件
+能够方便的处理字符串
+是理解面向对象语言中引用的基础</p>
+<p>总结： 指针是C语言的灵魂</p>
+<p>指针的定义
+地址：内存单元的编号
+从0开始的非负整数
+范围：内存条是多大
+CPU   &mdash;内存条
+控制线
+数据线
+地址线</p>
+<pre><code>地址线如果处理：  内存里 一个单元是一个字节，8位
+一根线是0，1
+两根线是四个组合
+几根线，2的几次方，
+</code></pre>
+<p>指针：</p>
+<p>指针的分类
+1.基本类型的指针  重要
+2.指针和数组
+3.指针和函数
+4.指针和结构体  重要
+5.多级指针</p>
+<p>##########################</p>
+<p>经典的指针互换两个数</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#define _CRT_SECURE_NO_WARNINGS</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#include &lt;stdio.h&gt;</span>
+</span></span><span style="display:flex;"><span>//经典指针程序互换两个数
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>//void huhuan_1<span style="color:#f92672">(</span>int a,int b<span style="color:#f92672">)</span>   //不能实现互换
+</span></span><span style="display:flex;"><span>//<span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>//	//int t;
+</span></span><span style="display:flex;"><span>//
+</span></span><span style="display:flex;"><span>//	//t <span style="color:#f92672">=</span> a;
+</span></span><span style="display:flex;"><span>//	//a <span style="color:#f92672">=</span> b;
+</span></span><span style="display:flex;"><span>//	//b <span style="color:#f92672">=</span> t;  //只是改变了形参的值，不能改修主函数的实参
+</span></span><span style="display:flex;"><span>//
+</span></span><span style="display:flex;"><span>//	<span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>//<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>void huhuan_2<span style="color:#f92672">(</span>int* p, int* q<span style="color:#f92672">)</span>   //不能实现互换
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	int t; 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	//t <span style="color:#f92672">=</span> p;
+</span></span><span style="display:flex;"><span>	//p <span style="color:#f92672">=</span> q;
+</span></span><span style="display:flex;"><span>	//q <span style="color:#f92672">=</span> t;   //只是把p,q的值改了而已，不能换算
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	t <span style="color:#f92672">=</span> *p;  //p是int*类型，*p 的是int
+</span></span><span style="display:flex;"><span>	*p <span style="color:#f92672">=</span> *q;
+</span></span><span style="display:flex;"><span>	*q <span style="color:#f92672">=</span> t;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>int main<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	int a <span style="color:#f92672">=</span> 3;
+</span></span><span style="display:flex;"><span>	int b <span style="color:#f92672">=</span> 5;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	/*huhuan_1<span style="color:#f92672">(</span>a,b<span style="color:#f92672">)</span>;*/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	//huhuan_2<span style="color:#f92672">(</span>a,b<span style="color:#f92672">)</span>;   //也是错误的
+</span></span><span style="display:flex;"><span>	huhuan_2<span style="color:#f92672">(</span>&amp;a, &amp;b<span style="color:#f92672">)</span>;   //也是错误的
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;a=%d, b=%d&#34;</span>, a, b<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> 0;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>指针使函数返回一个以上的值</p>
+<p>如果经过被调函数修改主调函数普通变量的值
+1.实参必须为该普通变量的地址
+2.形参必须为指针变量
+3.在被调函数中，通过 *形参名字方式，就可以修改主调函数相关变量的值</p>
+<p>P131</p>
+<ol>
+<li>
+<p>一维数组和指针
+一维数组名
+是指针常量，它存放的是一维数组的第一个地址</p>
+<p>下表和指针的关系
+如果p是个指针变量，
+则p[i] 永远等价于 *(p+i)</p>
+<p>确定一个一维数组需要几个参数。
+如果一个函数要处理一个一维数组，则需要接收该数组的哪些信息？ 还有要个数
+数组的第一个元素首地址，数组的长度
+一定要明白 10行的pArr[3], 和17行 19行的a[3]是同一个变量</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>void f<span style="color:#f92672">(</span>int* arr, int len<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	arr<span style="color:#f92672">[</span>3<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> 88;  //arr<span style="color:#f92672">[</span>3<span style="color:#f92672">]</span>  等价与*<span style="color:#f92672">(</span>arr+3<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>int main<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	int a<span style="color:#f92672">[</span>6<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span> 1,2,3,4,5,6 <span style="color:#f92672">}</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%d\n&#34;</span>, a<span style="color:#f92672">[</span>3<span style="color:#f92672">])</span>;
+</span></span><span style="display:flex;"><span>	f<span style="color:#f92672">(</span>a, 6<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>	printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%d\n&#34;</span>, a<span style="color:#f92672">[</span>3<span style="color:#f92672">])</span>;//a<span style="color:#f92672">[</span>3<span style="color:#f92672">]</span> 等价与*<span style="color:#f92672">(</span>a+3<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> 0;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>pArr[i]  等价于*(pArr+i)    等于是拷贝了一份</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>void f<span style="color:#f92672">(</span>int* pArr, int len<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	int i;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>i <span style="color:#f92672">=</span> 0; i &lt; len; ++i<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>		printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%d &#34;</span>, *<span style="color:#f92672">(</span>pArr + i<span style="color:#f92672">))</span>;   //*<span style="color:#f92672">(</span>pArr+i<span style="color:#f92672">)</span>, 等价与pArr<span style="color:#f92672">[</span>i<span style="color:#f92672">]</span>, 也等价与b<span style="color:#f92672">[</span>i<span style="color:#f92672">]</span>,也等价与*<span style="color:#f92672">(</span>b+i<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>		printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%d &#34;</span>, pArr<span style="color:#f92672">[</span>i<span style="color:#f92672">])</span>;  //等价
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>	printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;\n&#34;</span><span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>int main<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	int a<span style="color:#f92672">[</span>5<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span> 1,2,3,4,5 <span style="color:#f92672">}</span>;
+</span></span><span style="display:flex;"><span>	int b<span style="color:#f92672">[</span>6<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span> -1,-2,-3,4,5,-6 <span style="color:#f92672">}</span>;
+</span></span><span style="display:flex;"><span>	int c<span style="color:#f92672">[</span>100<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span> 1,99,22,33 <span style="color:#f92672">}</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	f<span style="color:#f92672">(</span>b, 6<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> 0;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><pre><code>指针变量的运算
+指针变量不能相加，不能相乘，也不能相除
+如果两个指针变量指向的是同一个连续空间的不同存储单元，则这两个指针变量才可以相减。
+预备知识：
+sizeof(数据类型)
+功能：返回值就是该数据类型所占的字节数
+例子sizeof(int)=4  sizeof(char)=1
+sizeof(double)=8
+
+sizeof(也可以写变量名)
+功能：返回值该变量所占的字节数
+
+指针变量都是占用4个字节
+
+一个指针变量兜底占几个字节
+
+
+假设p指向char类型变量  1
+假设q指向int类型变量  4
+假设r指向double类型变量  8
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#include &lt;stdio.h&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>//int main<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>//<span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>//	int i <span style="color:#f92672">=</span> 5;
+</span></span><span style="display:flex;"><span>//	int j <span style="color:#f92672">=</span> 10;
+</span></span><span style="display:flex;"><span>//	int* p <span style="color:#f92672">=</span> &amp;i;
+</span></span><span style="display:flex;"><span>//	int* q <span style="color:#f92672">=</span> &amp;j;
+</span></span><span style="display:flex;"><span>//
+</span></span><span style="display:flex;"><span>//	int a<span style="color:#f92672">[</span>5<span style="color:#f92672">]</span>;
+</span></span><span style="display:flex;"><span>//	p <span style="color:#f92672">=</span> &amp;a<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span>;
+</span></span><span style="display:flex;"><span>//	q <span style="color:#f92672">=</span> &amp;a<span style="color:#f92672">[</span>4<span style="color:#f92672">]</span>;
+</span></span><span style="display:flex;"><span>//
+</span></span><span style="display:flex;"><span>//	printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;p和q所指向的单元相隔 %d 个单元\n&#34;</span>, q - p<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>//
+</span></span><span style="display:flex;"><span>//	<span style="color:#66d9ef">return</span> 0;
+</span></span><span style="display:flex;"><span>//<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>int main<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	char ch <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;A&#39;</span>;
+</span></span><span style="display:flex;"><span>	int i <span style="color:#f92672">=</span> 99;
+</span></span><span style="display:flex;"><span>	double x <span style="color:#f92672">=</span> 66.6;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	char* p <span style="color:#f92672">=</span> &amp;ch;
+</span></span><span style="display:flex;"><span>	int* q <span style="color:#f92672">=</span> &amp;i;
+</span></span><span style="display:flex;"><span>	double* r <span style="color:#f92672">=</span> &amp;x;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%d %d %d\n&#34;</span>, sizeof<span style="color:#f92672">(</span>p<span style="color:#f92672">)</span>, sizeof<span style="color:#f92672">(</span>q<span style="color:#f92672">)</span>, sizeof<span style="color:#f92672">(</span>r<span style="color:#f92672">))</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> 0;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>输出都是 4 4 4</p>
+<p>只是保存首字节的编号</p>
+<ol start="2">
+<li>指针和二维数组，这个难度大</li>
+</ol>
+<p>*******************和流程控制一样重要
+动态内存分配  重要</p>
+<h2 id="传统数组的缺点">传统数组的缺点：</h2>
+<h3 id="1数组长度必须事先指定且只能是长整数不能是变量">1.数组长度必须事先指定，且只能是长整数，不能是变量</h3>
+<p>C99后可以是变量</p>
+<h3 id="2传统形式定义的数组该数组的内存程序员无法手动释放数组一旦定义系统会为该数组分配的存储空间就会一直存在除非数组所在的函数运行结束">2.传统形式定义的数组，该数组的内，存程序员无法手动释放，数组一旦定义，系统会为该数组分配的存储空间就会一直存在，除非数组所在的函数运行结束。</h3>
+<p>在一个函数，运行期间，系统为该函数中数组所分配的空间会一直存在，知道该函数运行完毕时，数组的空间才会释放。</p>
+<h3 id="3数组的长度一旦定义其长度就不能再更改">3.数组的长度一旦定义，其长度就不能再更改</h3>
+<pre><code>数组的长度不能再函数运行的过程中动态的扩充或缩小
+</code></pre>
+<h3 id="4a函数定义的数组在a函数运行期间可以被其他函数使用">4.A函数定义的数组，在A函数运行期间可以被其他函数使用</h3>
+<p>但A函数运行完毕之后，A函数中的数组将无法再被其他函数使用。
+传统方式定义的数组不能跨函数使用。</p>
+<h2 id="为什么需要动态内存分配">为什么需要动态内存分配</h2>
+<pre><code>动态数组很好的解决啦传统数组的这4个缺陷
+</code></pre>
+<h2 id="动态内存分配举例--动态数组的构造">动态内存分配举例  动态数组的构造</h2>
+<pre><code>malloc 是 memory(内存)  allocate(分配的缩写)
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#include &lt;stdio.h&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#include &lt;malloc.h&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>int main<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	int i <span style="color:#f92672">=</span> 5;  //分配了4个字节，静态分配。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	int* p <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>int*<span style="color:#f92672">)</span>malloc<span style="color:#f92672">(</span>4<span style="color:#f92672">)</span>;  //动态分配
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	free<span style="color:#f92672">(</span>p<span style="color:#f92672">)</span>;  //表示把p所指向的内存给释放掉，
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;同志们好！\n&#34;</span><span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> 0;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><ul>
+<li>1.要是用malloc函数，必须添加malloc.h这个头文件</li>
+<li>2.malloc函数只有一个形参，并且形参是整型</li>
+<li>3.4表示请求系统为本程序分配4个字节</li>
+<li>4.malloc函数只能返回第一个字节的地址</li>
+<li>5.强制类型转换int*,12行分配了8个字节，p变量占4个字节，p所指向的内存也占4个字节。</li>
+<li>6.p本身所占的内存是静态分配的，p所指向的内存是动态分配的。p本身的内存是静态的，不能由程序员手动释放，只能在程序运行完自动释放。</li>
+</ul>
+<p>静态内存和动态内存的比较</p>
+<p>跨函数使用内存的问题</p>
+<h2 id="动态内存分配一维数组">动态内存分配一维数组</h2>
+<p>多级指针</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>int main<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	int i <span style="color:#f92672">=</span> 0;
+</span></span><span style="display:flex;"><span>	int* p <span style="color:#f92672">=</span> &amp;i;
+</span></span><span style="display:flex;"><span>	int** q <span style="color:#f92672">=</span> &amp;p;
+</span></span><span style="display:flex;"><span>	int*** r <span style="color:#f92672">=</span> &amp;q;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	***r <span style="color:#f92672">=</span> 20;
+</span></span><span style="display:flex;"><span>	printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%d\n&#34;</span>, ***r<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> 0;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p><img src="/20240330/12345.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<p>静态变量不能跨函数使用指针</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>void f<span style="color:#f92672">(</span>int** q<span style="color:#f92672">)</span>	//q是个指针变量，无论q是什么类型的指针变量，都只占4个字节
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	int i <span style="color:#f92672">=</span> 5;
+</span></span><span style="display:flex;"><span>	//*q等价于p  q和**q都不等价于p
+</span></span><span style="display:flex;"><span>	//*q<span style="color:#f92672">=</span>i; //error 因为*q等价于i;等价于p<span style="color:#f92672">=</span>i； 这样写是错误的，静态变量不能跨函数。
+</span></span><span style="display:flex;"><span>	*q <span style="color:#f92672">=</span> &amp;i;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>只是保存首字节的编号
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>2. 指针和二维数组，这个难度大
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>*******************和流程控制一样重要
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>int main<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	int* p;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	f<span style="color:#f92672">(</span>&amp;p<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>	printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%d&#34;</span>, *p<span style="color:#f92672">)</span>;//本语句语法没有问题，但逻辑上有问题
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> 0;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><h2 id="p148-动态内存可以跨函数使用">P148 动态内存可以跨函数使用</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>void f<span style="color:#f92672">(</span>int** q<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	*q <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>int*<span style="color:#f92672">)</span>malloc<span style="color:#f92672">(</span>sizeof<span style="color:#f92672">(</span>int<span style="color:#f92672">))</span>;
+</span></span><span style="display:flex;"><span>		//等价于p<span style="color:#f92672">=(</span>int*<span style="color:#f92672">)</span>maclloc<span style="color:#f92672">(</span>sizeof<span style="color:#f92672">(</span>int<span style="color:#f92672">))</span>
+</span></span><span style="display:flex;"><span>	//q <span style="color:#f92672">=</span> 5;;	//  错误
+</span></span><span style="display:flex;"><span>	//*q <span style="color:#f92672">=</span> 5;	//p<span style="color:#f92672">=</span>5;  错误
+</span></span><span style="display:flex;"><span>	**q <span style="color:#f92672">=</span> 5;	//*p<span style="color:#f92672">=</span>5; 正确
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>int main<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	int* p;
+</span></span><span style="display:flex;"><span>	f<span style="color:#f92672">(</span>&amp;p<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>	printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%d&#34;</span>, *p<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> 0;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>内存的栈，堆的重新学习理解
+栈区，堆区，静态区   重新巩固学习</p>
+<h2 id="p150-为什么需要结构体">P150 为什么需要结构体</h2>
+<p>为了表示一些复杂的实物，而普通的基本类型无法满足需求</p>
+<h3 id="什么叫结构体">什么叫结构体</h3>
+<pre><code>把一些基本类型数据组合在一起形成的一个新的复合数据类型，这个叫做结构体
+</code></pre>
+<h3 id="如何定义结构体">如何定义结构体</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>//第一种  推荐
+</span></span><span style="display:flex;"><span>struct Student
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	int age;
+</span></span><span style="display:flex;"><span>	float score;
+</span></span><span style="display:flex;"><span>	char sex;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>//第二种
+</span></span><span style="display:flex;"><span>struct Student2
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	int age;
+</span></span><span style="display:flex;"><span>	float score;
+</span></span><span style="display:flex;"><span>	char sex;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>st2;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>//第三种
+</span></span><span style="display:flex;"><span>struct
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	int age;
+</span></span><span style="display:flex;"><span>	float score;
+</span></span><span style="display:flex;"><span>	char sex;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>st3;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>int main<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	struct Student st <span style="color:#f92672">=</span> <span style="color:#f92672">{</span> 80,66.6,<span style="color:#e6db74">&#39;F&#39;</span> <span style="color:#f92672">}</span>;  //st是结构体变量  基本类型组成成一个新的数据类型
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> 0;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><h2 id="怎么使用结构体变量">怎么使用结构体变量</h2>
+<h3 id="赋值和初始化">赋值和初始化</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>struct Student
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	int age;
+</span></span><span style="display:flex;"><span>	float score;
+</span></span><span style="display:flex;"><span>	char sex;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>int main<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	struct Student st <span style="color:#f92672">=</span> <span style="color:#f92672">{</span> 80,66.6,<span style="color:#e6db74">&#39;F&#39;</span> <span style="color:#f92672">}</span>;  //初始化，定义的同时赋，st是结构体变量  基本类型组成成一个新的数据类型
+</span></span><span style="display:flex;"><span>	struct Student st2;
+</span></span><span style="display:flex;"><span>	st2.age <span style="color:#f92672">=</span> 10;
+</span></span><span style="display:flex;"><span>	st2.score <span style="color:#f92672">=</span> 88;
+</span></span><span style="display:flex;"><span>	st2.sex <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;F&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%d %f %c\n&#34;</span>, st.age, st.score, st.sex<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>	printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%d %f %c\n&#34;</span>, st2.age, st2.score, st2.sex<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> 0;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><h3 id="如何取出结构体变量中的每一个成员">如何取出结构体变量中的每一个成员</h3>
+<ul>
+<li>1结构体变量名.成员名</li>
+<li>2结构体变量名-&gt;成员名</li>
+</ul>
+<h3 id="结构体变量的运算">结构体变量的运算</h3>
+<h3 id="heading"></h3>
+<p>郝斌C语言学习大纲
+<a class="link" href="https://blog.csdn.net/houjingchuan/article/details/122524318"  target="_blank" rel="noopener"
+    >https://blog.csdn.net/houjingchuan/article/details/122524318</a></p>
+<h3 id="举例">举例</h3>
+<p>动态结构存放学生信息的结构体数组</p>
+<h2 id="通过函数完成对结构体变量输入和输出">通过函数完成对结构体变量输入和输出</h2>
+<h3 id="应该发送内容还是发送地址发送地址占用内存小">应该发送内容还是发送地址，发送地址占用内存小</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#include &lt;stdio.h&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#include &lt;string.h&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>void InputStudent<span style="color:#f92672">(</span>struct Student* pstu<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>//void OutputStudent<span style="color:#f92672">(</span>struct Student ss<span style="color:#f92672">)</span>; //不修改，可以发送地址，也可以发送地址
+</span></span><span style="display:flex;"><span>void OutputStudent<span style="color:#f92672">(</span>const struct Student* ss<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>struct Student
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	int age;
+</span></span><span style="display:flex;"><span>	char sex;
+</span></span><span style="display:flex;"><span>	char name<span style="color:#f92672">[</span>100<span style="color:#f92672">]</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>int main<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	struct Student st;
+</span></span><span style="display:flex;"><span>	//printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%d\n&#34;</span>, sizeof<span style="color:#f92672">(</span>st<span style="color:#f92672">))</span>;  //发送内容的话，是st的总大小
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	InputStudent<span style="color:#f92672">(</span>&amp;st<span style="color:#f92672">)</span>;	//对结构体变量输入 ,必须发送st的地址
+</span></span><span style="display:flex;"><span>	//printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%d %c %s\n&#34;</span>,st.age,st.sex,st.name<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>	//OutputStudent<span style="color:#f92672">(</span>st<span style="color:#f92672">)</span>; //对结构体变量输出，可以发送地址，也可以发送数值
+</span></span><span style="display:flex;"><span>	//但是发送地址只占用4个字节，发送数值是st的总大小，发送地址耗用内存小，发送内容大
+</span></span><span style="display:flex;"><span>	OutputStudent<span style="color:#f92672">(</span>&amp;st<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> 0;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>void InputStudent<span style="color:#f92672">(</span>struct Student * pstu<span style="color:#f92672">)</span> //pstu只占4个字节  ，只用首字节表示
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	//<span style="color:#f92672">(</span>*pstu<span style="color:#f92672">)</span>.age <span style="color:#f92672">=</span> 20;   //等价于pstu-&gt;age
+</span></span><span style="display:flex;"><span>	pstu-&gt;age <span style="color:#f92672">=</span> 10;
+</span></span><span style="display:flex;"><span>	pstu-&gt;sex <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;F&#39;</span>;
+</span></span><span style="display:flex;"><span>	strcpy<span style="color:#f92672">(</span>pstu-&gt;name, <span style="color:#e6db74">&#34;张三&#34;</span><span style="color:#f92672">)</span>;	//不能写成stu.name <span style="color:#f92672">=</span>  <span style="color:#e6db74">&#34;张三&#34;</span>；
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>//void OutputStudent<span style="color:#f92672">(</span>const struct Student ss<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>//<span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>//	printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%d %c %s\n&#34;</span>, ss.age, ss.sex, ss.name<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>//<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>void OutputStudent<span style="color:#f92672">(</span>const struct Student* ss<span style="color:#f92672">)</span>  //加const 禁止修改
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%d %c %s\n&#34;</span>, ss-&gt;age, ss-&gt;sex, ss-&gt;name<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><h2 id="指针">指针：</h2>
+<h3 id="指针的重要性">指针的重要性</h3>
+<ul>
+<li>表示一些复杂的数据结构</li>
+<li>快速的传递数据</li>
+<li>使函数返回一个以上的值</li>
+<li>能直接访问硬件</li>
+<li>能够方便立即字符串</li>
+<li>是理解面对对象语言中引用的基础
+总结  指针是C语言的灵魂</li>
+</ul>
+<h2 id="结构体变量的运算-1">结构体变量的运算</h2>
+<p>结构体变量不能相加，不能相减，也不能相互乘除
+但结构体变量可以相互赋值
+struct Student st;</p>
+<h2 id="冒泡排序">冒泡排序</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#include &lt;stdio.h&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>void sort<span style="color:#f92672">(</span>int* a,int len<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	int i, j,t;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>i <span style="color:#f92672">=</span> 0; i &lt; len - 1; ++i<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>j <span style="color:#f92672">=</span> 0; j &lt; len - <span style="color:#ae81ff">1</span> - i; ++j<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>a<span style="color:#f92672">[</span>j<span style="color:#f92672">]</span> &gt; a<span style="color:#f92672">[</span>j + 1<span style="color:#f92672">])</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>				t <span style="color:#f92672">=</span> a<span style="color:#f92672">[</span>j<span style="color:#f92672">]</span>;
+</span></span><span style="display:flex;"><span>				a<span style="color:#f92672">[</span>j<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> a<span style="color:#f92672">[</span>j + 1<span style="color:#f92672">]</span>;
+</span></span><span style="display:flex;"><span>				a<span style="color:#f92672">[</span>j + 1<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> t;
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>int main<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	int a<span style="color:#f92672">[</span>6<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span> 10,2,8,-8,11,0 <span style="color:#f92672">}</span>;
+</span></span><span style="display:flex;"><span>	int i <span style="color:#f92672">=</span> 0;
+</span></span><span style="display:flex;"><span>	sort<span style="color:#f92672">(</span>a,6<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>i <span style="color:#f92672">=</span> 0; i &lt; 6; ++i<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>		printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%d &#34;</span>,a<span style="color:#f92672">[</span>i<span style="color:#f92672">])</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>	printf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;\n&#34;</span><span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> 0;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p><img src="/20240330/2024-03-31_142536.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2024 FANG S.H 个人博客
+    </section>
+    
+    <section class="powerby">
+        Built with fangshh <br />
+        业务合作 132-6586-1 (方工)
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
